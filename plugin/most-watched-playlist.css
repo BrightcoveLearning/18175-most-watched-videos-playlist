@@ -1,9 +1,11 @@
+/* override player styles */
 .video-js {
-  height: 345px;
-  width: 640px;
+  height: 279px;
+  width: 496px;
   float: left;
 }
+/* override playlist styles */
 .vjs-playlist {
-  width: 280px;
-  height: 345px;
+  width: 240px;
+  height: 279px;
 }

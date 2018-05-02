@@ -3,31 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Untitled Document</title>
+  <title>Most Watched Videos Playlist</title>
   <link href="most-watched-playlist.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- Player embed code with an id attribute -->
   <video id="myPlayerID"
     data-account="1752604059001"
-    data-player="H18cgu1wG"
+    data-player="Sk5m8XYoG"
     data-embed="default"
     data-application-id
     class="video-js"
     controls></video>
-
+  <!-- Element added to specify the location of the playlist -->
   <div class="vjs-playlist"></div>
 
-  <script src="//players.brightcove.net/1752604059001/H18cgu1wG_default/index.min.js"></script>
+  <script src="//players.brightcove.net/1752604059001/Sk5m8XYoG_default/index.min.js"></script>
 
-  <script src="most-watched-playlist.js"></script>
-
-  <script type="text/javascript">
-    videojs('myPlayerID').ready(function(){
-      var myPlayer = this;
-      myPlayer.mostWatchedPlaylist();
-    });
+  <!-- custom script -->
+  <script type="text/javascript" src="most-watched-playlist.js"></script>
+  <script>
+    videojs('myPlayerID').mostWatchedPlaylist();
   </script>
 
 </body>
