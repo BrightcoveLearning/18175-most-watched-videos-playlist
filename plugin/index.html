@@ -10,22 +10,22 @@
 <body>
 
   <!-- Player embed code with an id attribute -->
-  <video id="myPlayerID"
+  <video-js id="myPlayerID"
     data-account="1752604059001"
     data-player="Sk5m8XYoG"
     data-embed="default"
     data-application-id
     class="video-js"
-    controls></video>
+    controls></video-js>
   <!-- Element added to specify the location of the playlist -->
   <div class="vjs-playlist"></div>
 
-  <script src="//players.brightcove.net/1752604059001/Sk5m8XYoG_default/index.min.js"></script>
+  <script src="https://players.brightcove.net/1752604059001/Sk5m8XYoG_default/index.min.js"></script>
 
   <!-- custom script -->
   <script type="text/javascript" src="most-watched-playlist.js"></script>
   <script>
-    videojs('myPlayerID').mostWatchedPlaylist();
+    videojs.getPlayer('myPlayerID').mostWatchedPlaylist();
   </script>
 
 </body>
